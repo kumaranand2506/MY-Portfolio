@@ -1,0 +1,113 @@
+#portfolio{
+    margin-top: -25rem;
+   
+}
+
+.portfolio_container {
+   width: 100%;
+   padding: 40px;
+   border: 2px solid #00008B;
+   border-radius: 50% ;
+   height: 500px;
+   display: flex;
+   
+}
+.proimage img{
+    width: 400px;
+    grid-template-columns: repeat(2,1fr);
+    border: 2px solid #73AD21;
+    
+}
+.portfolio_item{
+   background: var(--color-bg-variant);
+   
+}
+.portfolio_item_image{
+    display:inline-flex;
+    gap: 1rem;
+   
+}
+.portfolio_item h3{
+    display: inline;
+    margin-left: 150px;
+    
+}
+.portfolio_item_image img{
+    border-radius: 15px 50px;
+   
+    margin-left: 5px;
+}
+
+.portfolio_item_image img:hover{
+    border-radius: 0px;
+    transition: var(--transition);
+}
+.text-img{
+    border: 1px solid blue;
+    border-radius: 15px 50px;
+    width: 410px;
+   justify-content: center;
+   padding-top: 10px;
+  
+}
+.text-img p{
+    text-align:center;
+}
+.text-img:hover{
+    background-color: #34568B;
+}
+
+/* -----------------------Small devices (Media queary)----------------- */
+
+@media screen and (max-width: 600px) {
+    #portfolio{
+        margin-top: 0;
+       
+    }
+    .portfolio_container{
+        padding: 45px;
+        
+        border: none;
+        
+    }
+    .portfolio_item_image img{
+       align-items: center;
+       margin-left: -20px;
+      
+    }
+    .proimage img{
+        width: 350px;
+        margin-left: 5px;
+        border-radius: 50px;
+    }
+     
+     .portfolio_item_image{
+         display:grid;
+         margin-left: -25px;
+     }
+    .proimage{
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .portfolio_item h3{
+        margin-left: 150px;
+    }
+    .text-img{
+        border: 1px solid blue;
+        border-radius: 15px 50px;
+        width: 360px;
+       justify-content: center;
+       padding-top: 10px;
+      
+    }
+    .portfolio_item_image a{
+        margin: 5px;
+    }
+    #portfolio h5{
+        margin-top: 50px;
+    }
+}
+/* -----------------------medium devices (Media queary)----------------- */
+
+
+    

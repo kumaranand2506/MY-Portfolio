@@ -1,0 +1,115 @@
+.header {
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+
+}
+
+.header_container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+    margin-top: 50px;
+}
+
+
+.kooimg {
+    width: 30px;
+    border-radius: 30px;
+
+}
+
+/* =============CTA button============= */
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.cta .btn {
+    border: 2px solid white;
+}
+
+/* ================== Header Social==================== */
+.header_social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: -19rem;
+    font-size: 25px;
+    /* margin-bottom: 120px;  delete bottom */ 
+}
+
+
+.header_social::after {
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+/* ====================image============= */
+
+.me{
+    overflow: hidden;
+    width: 22rem;
+    height: 22rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 4rem;
+    
+}
+.me img {
+    border-radius: 12rem 12rem 0 0;
+    
+}
+/* ====================Scroll Down============= */
+.scroll_down{
+    position: absolute;
+    right: -2.3rem;
+    bottom: -19rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+/* -----------------------Mediam devices (Media queary)----------------- */
+
+@media screen and (max-width: 1024px) {
+    header{
+        height: 68vh;
+    }
+}
+
+/* -----------------------Small devices (Media queary)----------------- */
+
+@media screen and (max-width: 600px) {
+    header{
+        height: 100vh;
+    }
+    .scroll_down{
+        display: none;
+    }
+    .header_social {
+       display: inline;
+       align-items: center;
+       left: calc(50% - 4rem);
+       margin-top: 5px;
+       margin-bottom: 5px;
+       bottom: 34rem;
+
+    } 
+    .me{
+        
+        width: 20rem;
+        height: 20rem;
+        position: absolute;
+        left: calc(55% - 11rem);
+        margin-top: 6rem;
+        
+    }
+}

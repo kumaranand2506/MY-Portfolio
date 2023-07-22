@@ -1,0 +1,108 @@
+#experience {
+    margin: 35%;
+
+    text-align: center;
+    align-items: center;
+
+}
+
+.expericence_container>div {
+    transition: var(--transition);
+    border-radius: 5rem;
+    border: 2px solid #45B39D;
+    margin-top: 25px;
+    background-color: powderblue;
+    font-family: verdana;
+    width: 160%;
+    margin-left: -90px;
+}
+
+.expericence_container>div:hover {
+    background-color: transparent;
+
+}
+
+.expericence_details {
+    display: grid;
+}
+
+#experience h4 {
+    color: var(--color-primary);
+}
+
+.icons {
+    font-size: 28px;
+    width: 25rem;
+    margin-top: 20px;
+    padding: 1rem;
+    margin: 20px 30px;
+    color: #B03A2E;
+    justify-content: center;
+    display: grid;
+}
+
+.icons h5 {
+    font-size: 26px;
+    display: inline-flex;
+}
+
+.htmll {
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+
+.javas {
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+
+.csss {
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+
+.boots {
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+
+.reac {
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+
+}
+
+/* -----------------------Small devices (Media queary)----------------- */
+
+@media screen and (max-width: 600px) {
+    #experience {
+        width: 81%;
+        text-align: center;
+        margin: 75% 25% 2% 9%;
+
+    }
+
+    .icons {
+        font-size: 30px;
+        margin-top: 20px;
+        align-items: center;
+        justify-content: center;
+        width: 20rem;
+    }
+
+    .expericence_container>div {
+        transition: var(--transition);
+
+        width: 130%;
+        margin-left: -40px;
+        
+    }
+
+
+  
+}

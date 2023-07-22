@@ -1,0 +1,39 @@
+
+
+form{
+ display: flex;
+ flex-direction: column;
+ 
+ align-items: center;
+ 
+}
+input {
+    background: var(--color-primary);
+    height: 50px;
+    border-radius: 10px;
+    width: 35%;
+    color: var( --color-white);
+}
+textarea{
+    background-color: transparent;
+    width: 35%;
+    border-radius: 0.5rem;
+    border: 2px solid var( --color-primary-variant);
+    resize: none;
+    color: var( --color-white);
+} 
+
+/* =================medium screen=================== */
+@media screen and (max-width:1024px){
+    #contact{
+        margin-top: 120%;
+    }
+}
+/* =================small screen=================== */
+@media screen and (max-width:600px){
+    input,textarea {
+ 
+        width: 85%;
+        
+    }
+}
