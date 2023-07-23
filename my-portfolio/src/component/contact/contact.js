@@ -21,7 +21,7 @@ const Contact = () => {
       <div className="container contact_container">
 
         
-        <form>
+        <form ref={form} onSubmit={sendEmail}>
         <input type="text" name='Name' placeholder='Your Name' required/><br />
         <input type="email" name='email' placeholder='Your Email' required/><br />
         <textarea name="message"  rows="10" placeholder='Your Message' required></textarea><br />
